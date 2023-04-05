@@ -1,0 +1,20 @@
+:root {
+  --main-color: #674188;
+  --main-color-light: #F7EFE5;
+  --main-color-lighter: hsl(36, 100%, 98%);
+  --font-color: hsl(272, 51%, 24%);
+  --shadow-color: 278.33deg 27.69% 74.51%;
+  --shadow-elevation-medium:
+    -0.3px -0.2px 0.4px hsl(var(--shadow-color) / 0.36),
+    -0.8px -0.7px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
+    -2.1px -1.7px 3px -1.7px hsl(var(--shadow-color) / 0.36),
+    -5px -4.2px 7.3px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-medium-down:
+    -0.2px 0.9px 0.8px hsl(var(--shadow-color) / 0.67),
+    -0.4px 1.8px 1.5px -1.5px hsl(var(--shadow-color) / 0.52),
+    -1.4px 6.1px 5.2px -3px hsl(var(--shadow-color) / 0.38),
+    -4.1px 17.5px 15px -4.4px hsl(var(--shadow-color) / 0.23);
+  --logo-shadow: -1.4px 2.8px hsl(278.33deg 27.69% 74.51% / 0.38);
+}
+
+/*# sourceMappingURL=variables.css.map */

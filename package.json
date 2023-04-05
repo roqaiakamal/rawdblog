@@ -1,0 +1,25 @@
+{
+  "name": "rawd",
+  "version": "0.0.1",
+  "description": "Roqaia Kamaluddein's Blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "sass": "sass --watch scss:assets/css",
+    "start": "concurrently --kill-others \"npm run sass\" \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitmibrahim/rawd.git"
+  },
+  "author": "Muhammed Ibrahim (Roqaia's husband)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitmibrahim/rawd/issues"
+  },
+  "homepage": "https://github.com/gitmibrahim/rawd#readme",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "live-server": "^1.1.0"
+  }
+}
