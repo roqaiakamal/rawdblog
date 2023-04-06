@@ -68,26 +68,41 @@ body.dark {
   }
 }
 
-main {
-  position: relative;
-}
-main.article-page {
+.article-page {
   padding: 3rem 1rem 3rem 5rem;
   display: grid;
   gap: 3rem;
 }
-main.article-page img {
+.article-page .byline {
+  display: flex;
+  gap: 1ch;
+  align-items: center;
+}
+.article-page .byline a {
+  color: inherit;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+.article-page .byline time {
+  font-size: 0.8rem;
+  padding: 0.2rem 0 0;
+}
+.article-page img {
   border-radius: 0.75rem;
   border: 3px solid palevioletred;
   padding: 3px;
 }
 @media (width < 928px) {
-  main.article-page {
+  .article-page {
     padding: 3rem clamp(1%, 1rem, 3rem);
   }
-  main.article-page img {
+  .article-page img {
     height: auto !important;
   }
+}
+
+main {
+  position: relative;
 }
 @media (width < 928px) {
   main .hero-articles {
@@ -105,6 +120,7 @@ main.article-page img {
   }
 }
 main article {
+  position: relative;
   cursor: pointer;
   border: 1.5px solid var(--main-color-light);
   border-radius: 1rem;
@@ -114,9 +130,11 @@ main article {
 main article:hover {
   box-shadow: var(--shadow-elevation-medium-down);
 }
-main article a {
+main article > a {
   text-decoration: unset;
   color: unset;
+  position: absolute;
+  inset: 0;
 }
 main article .img-wrapper {
   height: 20rem;
@@ -137,12 +155,10 @@ main article .text-wrapper header {
 main article .text-wrapper header h1 {
   font-size: 1rem;
 }
-main article .text-wrapper p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+main article .text-wrapper p a {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 main .hero-articles {
   padding: 1rem;
@@ -161,14 +177,8 @@ main .hero-articles article:nth-child(1) .text-wrapper {
 main .hero-articles article:nth-child(2) {
   grid-area: two;
 }
-main .hero-articles article:nth-child(2) .img-wrapper {
-  height: 10rem;
-}
 main .hero-articles article:nth-child(3) {
   grid-area: thd;
-}
-main .hero-articles article:nth-child(3) .img-wrapper {
-  height: 10rem;
 }
 main .rest-of-articles {
   padding: 1rem;
