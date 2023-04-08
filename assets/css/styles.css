@@ -159,8 +159,6 @@ main article .text-wrapper p a {
   text-decoration: underline;
   font-weight: 600;
   font-size: 0.9rem;
-}
-main article .text-wrapper p a:visited, main article .text-wrapper p a:active {
   color: inherit;
 }
 main .hero-articles {
