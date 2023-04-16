@@ -2,6 +2,8 @@ User-agent: *
 
 Allow: /
 
-Disallow: /category
+Disallow: /category/
+Disallow: /page/
+Disallow: /pages/
 
 Sitemap: https://rawdblog.com/sitemap.xml
